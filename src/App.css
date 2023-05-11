@@ -1,0 +1,89 @@
+@font-face {
+  font-family: spaceCraft;
+  src: url('/Space Craft.ttf');
+}
+
+@font-face {
+  font-family: Amper;
+  src: url('/Amperzand.ttf');
+}
+
+.App {
+  text-align: center;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.header-decoration {
+  position: fixed;
+  top: 0;
+  font-family: Amper !important;
+  left: 0;
+  width: 100vw;
+  height: 150px;
+  background: linear-gradient(180deg, #8c52ff 15%, rgba(140, 82, 255, 0.3) 60%, rgba(140, 82, 255, 0) 100%);
+  z-index: 9;
+  padding-top: 3%;
+  padding-bottom: 1em;
+  font-size: 3em;
+  user-select: none;
+}
+
+.header-icon {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30%;
+  max-width: 150px;
+  height: 150px;
+  background: url('/mistress-icon.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+.header-links {
+  position: absolute;
+  top: -1rem;
+  right: 2rem;
+}
+
+.gallery {
+  position: relative;
+  z-index: 2;
+  max-width: 95vw;
+  margin: 0 1vw;
+}
+
+.gallery-image {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.5em;
+  border-radius: 2em;
+  display: flex;
+  align-self: center;
+}
+
+.lazy-load-image-background {
+  background-size: cover !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex !important;
+  min-height: 40vh;
+}
+
+@media (max-width: 600px) {
+  .header-decoration {
+    height: 100px;
+    font-size: 2rem;
+  }
+
+  .header-icon {
+    top: 1rem;
+  }
+
+  .header-links {
+    top: 1rem;
+  }
+}
