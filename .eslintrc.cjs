@@ -5,17 +5,21 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
+    "react-app",
     'standard-with-typescript'
   ],
   overrides: [
   ],
   parserOptions: {
     ecmaVersion: 'latest',
-    sourceType: 'module'
+    sourceType: 'module',
+    project: './tsconfig.json'
   },
   plugins: [
     'react'
   ],
   rules: {
+    'react/react-in-jsx-scope': 'off',
+    'react/jsx-uses-react': 'off'
   }
 }

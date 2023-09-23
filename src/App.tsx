@@ -4,6 +4,7 @@ import './Galaxy.css';
 import { Center } from '@mantine/core';
 
 import Gallery from './components/Gallery';
+import Photos from './components/Photos';
 import LinkTree from './components/LinkTree';
 import Sparkles from './components/Sparkles';
 import useMousePosition from './hooks/useMousePosition';
@@ -49,7 +50,7 @@ function App() {
           }} src="/mistress-cutout.png" alt="Mistress Of Magik" />
         </Sparkles>
       </Center>
-      <Gallery />
+      <Photos />
     </div>
   )
 }
